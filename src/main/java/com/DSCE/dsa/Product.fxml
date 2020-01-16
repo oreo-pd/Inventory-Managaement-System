@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1050.0" style="-fx-background-image: url('file:///C:/Users/HP/Downloads/dsa/src/main/java/img/bg7.jpg');  -fx-background-size: 1400;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.DSCE.dsa.Product">
+   <children>
+      <TextField fx:id="pro_name" layoutX="173.0" layoutY="123.0" prefHeight="43.0" prefWidth="324.0" promptText="Product Name">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+       
+         
+      <TextField fx:id="pro_cost" layoutX="173.0" layoutY="213.0" prefHeight="43.0" prefWidth="324.0" promptText="Cost">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <TextField fx:id="pid" layoutX="173.0" layoutY="299.0" prefHeight="43.0" prefWidth="324.0" promptText="product ID">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+        <TextField fx:id="qty" layoutX="173.0" layoutY="389.0" prefHeight="43.0" prefWidth="324.0" promptText="quantity">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+        <TextField fx:id="expiry" layoutX="173.0" layoutY="472.0" prefHeight="43.0" prefWidth="324.0" promptText="expiry">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+        
+      
+      <Button fx:id="add" layoutX="686.0" layoutY="166.0" mnemonicParsing="false" onAction="#add" prefHeight="43.0" prefWidth="143.0" style="-fx-background-color: #ffffff;" text="ADD">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="686.0" layoutY="256.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="143.0" style="-fx-background-color: #ffffff;" text="Button">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="view" layoutX="686.0" layoutY="346.0" mnemonicParsing="false" onAction="#view_table" prefHeight="43.0" prefWidth="149.0" style="-fx-background-color: #ffffff;" text="VIEW TABLE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Text layoutX="426.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTS">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

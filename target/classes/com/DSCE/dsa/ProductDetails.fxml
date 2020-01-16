@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="951.0" stylesheets="@../Desktop/FacHelpe4r/src/main/java/application/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.DSCE.dsa.ProductDetails">
+   <center>
+      <TableView fx:id="tableview" prefHeight="573.0" prefWidth="562.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="EmpID" prefWidth="100.0" text="Product ID" />
+            <TableColumn fx:id="empName" prefWidth="120.0" text="Product Name" />
+            <TableColumn fx:id="empImage" prefWidth="150.0" text="Product Photo" />
+            <TableColumn fx:id="empEmail" prefWidth="140.0" text="Description" />
+            <TableColumn fx:id="department" prefWidth="150.0" text="Quantity" />
+            <TableColumn fx:id="salary" prefWidth="75.0" text="Price" />
+         </columns></TableView>
+   </center>
+   <left>
+      <AnchorPane prefHeight="573.0" prefWidth="274.0" style="-fx-background-image: url('file:///C:/Users/HP/Downloads/dsa/src/main/java/img/bg7.jpg');  -fx-background-size: 1400;" BorderPane.alignment="CENTER">
+         <children>
+          
+                  <TextField fx:id="id" layoutX="25.0" layoutY="62.0" prefHeight="13.0" prefWidth="217.0" promptText="Enter Product ID" style="-fx-prompt-text-fill: #6464a5;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            
+            
+             <Button fx:id="extract" focusTraversable="false" layoutX="9.0" layoutY="279.0" mnemonicParsing="false" onAction="#Extract_row_values" prefHeight="43.0" prefWidth="124.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: #000000;" text="EXTRACT" textFill="#f8f5f5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="update" layoutX="142.0" layoutY="279.0" mnemonicParsing="false" onAction="#update_table" prefHeight="43.0" prefWidth="124.0" style="-fx-background-color: #ffffff; -fx-text-fill: #000000;" text="UPDATE" textFill="#f8f5f5">
+            <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               </Button>
+            <TextField fx:id="qty" layoutX="25.0" layoutY="202.0" prefHeight="31.0" prefWidth="217.0" promptText="Enter modified quantity" style="-fx-prompt-text-fill: #6464a5;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="pname" layoutX="25.0" layoutY="390.0" prefHeight="13.0" prefWidth="217.0" promptText="Enter product name" style="-fx-prompt-text-fill: #6464a5;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="name" layoutX="25.0" layoutY="136.0" prefHeight="13.0" prefWidth="217.0" promptText="Enter Product name" style="-fx-prompt-text-fill: #6464a5;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Button layoutX="57.0" layoutY="455.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="124.0" style="-fx-background-color: #ffffff; -fx-text-fill: #000000;" text="ADD ROWS">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+              
+         </children>
+         
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="31.0" prefWidth="886.0" style="-fx-background-color: #50d07d;" stylesheets="@../Desktop/FacHelpe4r/Desktop/application.css" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
